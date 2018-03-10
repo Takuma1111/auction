@@ -1,0 +1,10 @@
+<h1>出品紹介一覧</h1>
+
+<ul>
+  <% @items.each do |item| %>
+    <li><%= link_to item.name, item_path(item) %></li>
+  <% end %>
+</ul>
+
+
+<a href="<%= new_item_path %>">出品する</a>
